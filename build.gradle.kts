@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.8.22"
+    kotlin("multiplatform") version "1.9.0"
 }
 
 group = "com.molikuner"
@@ -32,6 +32,13 @@ kotlin {
         }
         val iosSimulatorArm64Test by getting {
             dependsOn(iosTest)
+        }
+
+        all {
+            languageSettings {
+                optIn("kotlinx.cinterop.BetaInteropApi")
+                optIn("kotlinx.cinterop.ExperimentalForeignApi")
+            }
         }
     }
 }
