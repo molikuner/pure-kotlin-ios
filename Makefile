@@ -7,6 +7,10 @@ default: simulator.app
 clean:
 	./gradlew clean
 
+.PHONY: sim
+sim:
+	open -a "Simulator.app"
+
 .PHONY: simulator.app
 simulator.app:
 	./gradlew --quiet linkDebugExecutableIosSimulatorArm64
