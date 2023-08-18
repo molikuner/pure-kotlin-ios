@@ -7,9 +7,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>Pure Kotlin iOS</string>
 	<key>CFBundleExecutable</key>
-	<string>pure-kotlin-ios.kexe</string>
+	<string>direct-uikit.kexe</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.molikuner.kn.ios.pure-kotlin-ios</string>
+	<string>com.molikuner.kn.ios.pure-kotlin-ios.direct-uikit</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
