@@ -1,6 +1,6 @@
 plugins {
     id("org.jetbrains.compose")
-    id("pure-kotlin-ios.app-conventions")
+    id("pure-kotlin-ios.ios-conventions")
 }
 
 kotlin {
@@ -11,9 +11,4 @@ kotlin {
             }
         }
     }
-}
-
-repositories {
-    mavenCentral()
-    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }

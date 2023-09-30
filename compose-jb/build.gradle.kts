@@ -1,4 +1,5 @@
 plugins {
+    id("pure-kotlin-ios.app-conventions")
     id("pure-kotlin-ios.compose-conventions")
 }
 
