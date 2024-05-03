@@ -3,7 +3,14 @@ plugins {
 }
 
 kotlin {
-    ios {
+    iosArm64 {
+        binaries {
+            executable {
+                entryPoint = "com.molikuner.kn.ios.main"
+            }
+        }
+    }
+    iosX64 {
         binaries {
             executable {
                 entryPoint = "com.molikuner.kn.ios.main"

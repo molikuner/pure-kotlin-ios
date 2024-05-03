@@ -7,24 +7,21 @@ version = "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    google()
 }
 
 kotlin {
-    ios()
+    iosArm64()
+    iosX64()
     iosSimulatorArm64()
+
+    applyDefaultHierarchyTemplate()
+
     sourceSets {
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
             }
-        }
-        val iosMain by getting
-        val iosTest by getting
-        val iosSimulatorArm64Main by getting {
-            dependsOn(iosMain)
-        }
-        val iosSimulatorArm64Test by getting {
-            dependsOn(iosTest)
         }
 
         all {

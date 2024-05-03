@@ -3,7 +3,10 @@ plugins {
 }
 
 kotlin {
-    ios {
+    iosArm64 {
+        withSourcesJar()
+    }
+    iosX64 {
         withSourcesJar()
     }
     iosSimulatorArm64 {
