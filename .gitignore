@@ -36,3 +36,6 @@ gradle-app.setting
 
 # Java heap dump
 *.hprof
+
+# Kotlin
+.kotlin/
